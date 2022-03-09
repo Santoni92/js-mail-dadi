@@ -26,7 +26,7 @@ for(let indice = 0; indice < numeroMassimoInserimenti; indice++)
         if(arrayEmail[i] === emailUtente)
         {
             console.log('Email corretta!!!');
-            //i = numeroMassimoInserimenti;   //per uscire dal ciclo esterno
+            i = numeroMassimoInserimenti;   //per uscire dal ciclo esterno
         }else{
             //console.log('Email errata');
             emailUtente = prompt('Errore!!Inserire nuovamente email:');
