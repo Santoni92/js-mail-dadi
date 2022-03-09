@@ -25,11 +25,12 @@ for(let indice = 0; indice < numeroMassimoInserimenti; indice++)
     {
         if(arrayEmail[i] === emailUtente)
         {
-            console.log('Email corretta!!!');
-            i = numeroMassimoInserimenti;   //per uscire dal ciclo esterno
+            //console.log('Email corretta!!!');
+            alert('Email corretta!!!');
+            break;
         }else{
-            //console.log('Email errata');
             emailUtente = prompt('Errore!!Inserire nuovamente email:');
         }
     }
 }
+alert('Hai superato il numero massimo di tentativi, accesso negato!!!');
