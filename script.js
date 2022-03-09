@@ -13,3 +13,23 @@
 
 console.log('JS OK');   //per controllare che lo script js sia linkato dal codice html
 
+const numeroMassimoInserimenti = Math.floor((Math.random() * 10) + 1);  //il numero massimo di tentativi di inserimento dell'email da parte dell'utente va da 1 a 10
+
+let arrayEmail = ["silvio@gmail.com","lorenzo@gmail.com","federico@gmail.com"];
+
+let emailUtente = prompt('Inserisci la tua email:');
+
+for(let indice = 0; indice < numeroMassimoInserimenti; indice++)
+{
+    for(let i = 0; i < arrayEmail.length; i++)
+    {
+        if(arrayEmail[i] === emailUtente)
+        {
+            console.log('Email corretta!!!');
+            //i = numeroMassimoInserimenti;   //per uscire dal ciclo esterno
+        }else{
+            //console.log('Email errata');
+            emailUtente = prompt('Errore!!Inserire nuovamente email:');
+        }
+    }
+}
